@@ -1,0 +1,10 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>home-detail</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+<ion-button (click)="canLeave = !canLeave">{{canLeave ? 'Edit' : 'Browse'}}</ion-button>
+You are {{canLeave ? 'not editing.' : 'editing this page you should not be able to swipe back...'}}
+</ion-content>

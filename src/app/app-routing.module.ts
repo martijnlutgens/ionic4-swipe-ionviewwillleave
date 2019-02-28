@@ -5,6 +5,7 @@ import { CanDeactivateGuard } from './auth/can-deactivate-guard.service';
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', loadChildren: './home/home.module#HomePageModule' },
+  { path: 'home-detail', loadChildren: './home/home-detail/home-detail.module#HomeDetailPageModule' },
   ];
 
 @NgModule({
